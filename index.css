@@ -7,6 +7,10 @@
     scroll-behavior: smooth;
 }
 
+*::-webkit-scrollbar {
+    display: none;
+}
+
 a, li, ul{
     all:unset
 }
@@ -69,8 +73,12 @@ nav li{
 
 .content_space{
     display: flex;
-    width: 80%;
+    width: 100%;
     justify-content: space-between;
+}
+
+.list{
+    margin-right: 200px;
 }
 
 .profile{
@@ -116,6 +124,7 @@ nav li{
 .experiences{
     display: flex;
     margin-bottom: 30px;
+    align-items: flex-start;
 }
 
 .experiences img{
@@ -126,4 +135,25 @@ nav li{
 .language{
     margin: 80px 0px 100px 0;
     line-height: 40px;
+}
+
+.project img{
+    width: 700px;
+    height: 430px;
+    background-color: #606060;
+    margin-bottom: 20px;
+}
+
+.sub_title{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.description{
+    width: 700px;
+}
+
+.description .sub_title{
+    margin-bottom: 15px;
 }
